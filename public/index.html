@@ -90,14 +90,22 @@
                 }
             }
         }
-    }catch(_e){}</script><meta charset="utf-8"></head><body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+    }catch(_e){}</script><meta charset="utf-8"><style>
+  .hide-scrollbar::-webkit-scrollbar{display:none}
+  .hide-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+  .carta-cat.fade{animation:cartaFadeIn .35s ease}
+  @keyframes cartaFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .acc-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+  .acc-icon{transition:transform .3s ease}
+  #carta-completa{scroll-margin-top:96px}
+</style></head><body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/15">
 <div class="flex justify-between items-center px-margin-desktop py-6 max-w-container-max mx-auto">
 <a href="#" aria-label="UNIDO Nordelta - Inicio"><img src="/images/unido-logo.png" alt="UNIDO" class="h-12 w-auto object-contain"></a>
 <div class="hidden md:flex items-center space-x-8">
 <a href="#" class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1">Inicio</a>
-<a href="#carta" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Carta</a>
+<a href="#carta-completa" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Carta</a>
 <a href="#nosotros" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
 <a href="#fotos" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Fotos</a>
 <a href="#contacto" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
@@ -152,7 +160,7 @@
 <span class="font-label-md text-label-md uppercase tracking-[0.3em] text-primary">El Arte de la Fusión</span>
 <h2 class="font-headline-md text-headline-md text-on-surface mt-4">Nuestros destacados de temporada</h2>
 </div>
-<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors" href="#">Ver carta completa</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors" href="#carta-completa">Ver carta completa</a>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
 <!-- Dish 1: Ceviche Mixto -->
@@ -220,6 +228,19 @@
 <span class="flex items-center gap-2 bg-surface border border-outline-variant/20 text-on-surface-variant px-5 py-2 rounded-full font-label-md text-label-md uppercase tracking-widest"><span class="material-symbols-outlined text-primary" style="font-size:18px;">grain</span>Opciones sin TACC</span>
 <span class="flex items-center gap-2 bg-surface border border-outline-variant/20 text-on-surface-variant px-5 py-2 rounded-full font-label-md text-label-md uppercase tracking-widest"><span class="material-symbols-outlined text-secondary" style="font-size:18px;">eco</span>Opciones veganas y vegetarianas</span>
 </div>
+</div>
+</section>
+<!-- Carta Completa Section -->
+<section class="bg-surface py-32" id="carta-completa">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-14">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-primary">La Carta</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-4">Carta completa</h2>
+</div>
+<!-- Tabs -->
+<div id="carta-tabs" role="tablist" class="flex flex-nowrap md:flex-wrap md:justify-center gap-3 md:gap-4 overflow-x-auto hide-scrollbar border-b border-outline-variant/25 mb-14 pb-0"></div>
+<!-- Panels -->
+<div id="carta-panels"></div>
 </div>
 </section>
 <!-- Galería Section -->
@@ -299,7 +320,7 @@
 <div>
 <h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Dirección</h4>
 <p class="font-body-lg text-body-lg text-on-surface-variant">Av. Nordelta 1670, Buenos Aires.</p>
-<a href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Nordelta+1670,+Buenos+Aires,+Argentina" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest px-6 py-3 rounded-lg hover:bg-on-surface transition-all"><span class="material-symbols-outlined" style="font-size:18px;">directions</span>Cómo llegar</a>
+<a href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.+Nordelta+1670,+Buenos+Aires,+Provincia+de+Buenos+Aires,+Argentina" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-5 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest px-6 py-3 rounded-lg hover:bg-on-surface transition-all"><span class="material-symbols-outlined" style="font-size:18px;">directions</span>Cómo llegar</a>
 </div>
 <div>
 <h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Horarios</h4>
@@ -315,7 +336,7 @@
 </div>
 </div>
 <div class="w-full min-h-[350px] md:h-full p-6 md:p-8 flex items-stretch">
-<iframe title="Mapa de UNIDO — Av. Nordelta 1670, Buenos Aires" src="https://www.google.com/maps?q=Av.+Nordelta+1670,+Buenos+Aires,+Argentina&amp;output=embed" class="w-full h-full min-h-[350px] rounded-lg border-0" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+<iframe title="Mapa de UNIDO — Av. Nordelta 1670, Buenos Aires" src="https://www.google.com/maps?q=Av.+Nordelta+1670,+Buenos+Aires,+Provincia+de+Buenos+Aires,+Argentina&amp;output=embed" class="w-full h-full min-h-[350px] rounded-lg border-0" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
 </div>
 </div>
 </div>
@@ -343,7 +364,7 @@
 <h4 class="font-label-md text-label-md uppercase tracking-widest mb-6 font-bold">Explorar</h4>
 <nav class="flex flex-col space-y-3">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Inicio</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#carta">Carta</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#carta-completa">Carta</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#nosotros">Nosotros</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#fotos">Fotos</a>
 </nav>
@@ -395,6 +416,170 @@
                 nav.classList.remove('py-4');
             }
         });
+    </script>
+<script src="/menu-data.js"></script>
+<script>
+    (function () {
+        var data = window.UNIDO_MENU;
+        var tabsEl = document.getElementById('carta-tabs');
+        var panelsEl = document.getElementById('carta-panels');
+        if (!data || !tabsEl || !panelsEl) return;
+
+        function esc(s) {
+            return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+                return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+            });
+        }
+
+        var leader = '<span class="flex-1 border-b border-dotted border-outline-variant/70 mb-1.5 mx-2"></span>';
+
+        function descHTML(d) {
+            return d ? '<p class="mt-1 font-body-md text-sm text-on-surface-variant leading-snug">' + esc(d) + '</p>' : '';
+        }
+
+        function itemHTML(it) {
+            var name = '<span class="font-body-lg text-body-lg text-on-surface font-medium">' + esc(it.name) + '</span>';
+            var html = '<div class="py-3 border-b border-outline-variant/15 last:border-b-0">';
+            if (it.variants && it.variants.length) {
+                html += '<div class="flex items-baseline">' + name + '</div>';
+                html += descHTML(it.desc);
+                html += '<div class="mt-2 space-y-1">';
+                it.variants.forEach(function (v) {
+                    html += '<div class="flex items-end">'
+                        + '<span class="font-body-md text-on-surface-variant">' + esc(v.label) + '</span>'
+                        + leader
+                        + '<span class="font-body-md font-bold text-on-surface whitespace-nowrap">' + esc(v.price) + '</span>'
+                        + '</div>';
+                });
+                html += '</div>';
+            } else {
+                html += '<div class="flex items-end">'
+                    + name + leader
+                    + '<span class="font-body-md font-bold text-on-surface whitespace-nowrap">' + esc(it.price) + '</span>'
+                    + '</div>';
+                html += descHTML(it.desc);
+            }
+            html += '</div>';
+            return html;
+        }
+
+        function itemsHTML(items) {
+            return items.map(itemHTML).join('');
+        }
+
+        function sectionBlockHTML(sec) {
+            var noteHTML = sec.note ? '<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant/70 whitespace-nowrap">' + esc(sec.note) + '</span>' : '';
+            return '<div class="break-inside-avoid">'
+                + '<div class="flex items-center gap-4 mb-3">'
+                + '<h3 class="font-headline-sm text-headline-sm text-primary whitespace-nowrap">' + esc(sec.title) + '</h3>'
+                + '<span class="flex-1 h-px bg-outline-variant/30"></span>'
+                + noteHTML
+                + '</div>'
+                + itemsHTML(sec.items)
+                + '</div>';
+        }
+
+        function accordionItemHTML(sec) {
+            return '<div class="border border-outline-variant/25 rounded-lg overflow-hidden bg-surface-container-lowest">'
+                + '<button type="button" class="acc-trigger w-full flex items-center justify-between gap-4 px-6 py-4 text-left hover:bg-surface-container-low transition-colors">'
+                + '<span class="font-title-lg text-title-lg text-on-surface">' + esc(sec.title) + '</span>'
+                + '<span class="material-symbols-outlined acc-icon text-primary">expand_more</span>'
+                + '</button>'
+                + '<div class="acc-body"><div class="px-6 pb-5 pt-1">' + itemsHTML(sec.items) + '</div></div>'
+                + '</div>';
+        }
+
+        function catNoteHTML(note) {
+            return note ? '<p class="text-center font-body-md text-sm text-on-surface-variant italic mb-10">' + esc(note) + '</p>' : '';
+        }
+
+        // Build tabs + panels
+        data.categories.forEach(function (cat, i) {
+            var tab = document.createElement('button');
+            tab.type = 'button';
+            tab.setAttribute('role', 'tab');
+            tab.dataset.cat = cat.id;
+            tab.className = 'carta-tab shrink-0 font-label-md text-label-md uppercase tracking-widest px-4 md:px-6 py-4 border-b-2 -mb-px transition-colors border-transparent text-on-surface-variant hover:text-primary';
+            tab.textContent = cat.label;
+            tabsEl.appendChild(tab);
+
+            var wrap = document.createElement('div');
+            wrap.className = 'carta-cat';
+            wrap.dataset.cat = cat.id;
+            if (i !== 0) wrap.hidden = true;
+
+            var inner = catNoteHTML(cat.note);
+            if (cat.type === 'accordion') {
+                inner += '<div class="max-w-3xl mx-auto space-y-3">' + cat.sections.map(accordionItemHTML).join('') + '</div>';
+            } else {
+                inner += '<div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-14 items-start">' + cat.sections.map(sectionBlockHTML).join('') + '</div>';
+            }
+            wrap.innerHTML = inner;
+            panelsEl.appendChild(wrap);
+        });
+
+        var tabs = Array.prototype.slice.call(tabsEl.querySelectorAll('.carta-tab'));
+        var cats = Array.prototype.slice.call(panelsEl.querySelectorAll('.carta-cat'));
+
+        function setActiveTab(id) {
+            tabs.forEach(function (t) {
+                var on = t.dataset.cat === id;
+                t.classList.toggle('text-primary', on);
+                t.classList.toggle('border-primary', on);
+                t.classList.toggle('border-transparent', !on);
+                t.classList.toggle('text-on-surface-variant', !on);
+                t.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+        }
+
+        function openAcc(body) {
+            body.style.maxHeight = body.scrollHeight + 'px';
+            body.dataset.open = '1';
+            var icon = body.previousElementSibling.querySelector('.acc-icon');
+            if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+        function closeAcc(body) {
+            body.style.maxHeight = '0px';
+            body.dataset.open = '';
+            var icon = body.previousElementSibling.querySelector('.acc-icon');
+            if (icon) icon.style.transform = '';
+        }
+
+        function showCat(id) {
+            cats.forEach(function (c) {
+                var on = c.dataset.cat === id;
+                c.hidden = !on;
+                if (on) {
+                    c.classList.remove('fade');
+                    void c.offsetWidth; // reflow to re-trigger animation
+                    c.classList.add('fade');
+                    // open first accordion by default the first time this cat is shown
+                    if (!c.dataset.accInit) {
+                        var firstBody = c.querySelector('.acc-body');
+                        if (firstBody) openAcc(firstBody);
+                        c.dataset.accInit = '1';
+                    }
+                }
+            });
+            setActiveTab(id);
+        }
+
+        tabsEl.addEventListener('click', function (e) {
+            var t = e.target.closest('.carta-tab');
+            if (t) showCat(t.dataset.cat);
+        });
+
+        panelsEl.addEventListener('click', function (e) {
+            var trig = e.target.closest('.acc-trigger');
+            if (!trig) return;
+            var body = trig.nextElementSibling;
+            if (!body) return;
+            if (body.dataset.open) { closeAcc(body); } else { openAcc(body); }
+        });
+
+        // init
+        setActiveTab(data.categories[0].id);
+    })();
     </script>
 
 </body></html>
