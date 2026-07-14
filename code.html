@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="es" class="scroll-smooth" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-variant": "#e4e2dd",
+                        "outline-variant": "#d0c5b9",
+                        "surface-dim": "#dbdad5",
+                        "surface-container-low": "#f5f3ee",
+                        "on-tertiary-container": "#46391e",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f1ec",
+                        "on-surface": "#1b1c19",
+                        "on-primary-container": "#483821",
+                        "surface": "#fbf9f4",
+                        "inverse-primary": "#dbc3a3",
+                        "error-container": "#ffdad6",
+                        "on-background": "#1b1c19",
+                        "surface-container-highest": "#e4e2dd",
+                        "secondary-fixed-dim": "#b9cbbd",
+                        "tertiary": "#6c5c3f",
+                        "surface-tint": "#6e5b41",
+                        "primary-fixed-dim": "#dbc3a3",
+                        "secondary-fixed": "#d5e7d8",
+                        "on-secondary-container": "#56675b",
+                        "primary-fixed": "#f9dfbe",
+                        "on-primary-fixed-variant": "#55442c",
+                        "tertiary-fixed": "#f6e0ba",
+                        "surface-container-high": "#eae8e3",
+                        "primary": "#6e5b41",
+                        "on-secondary-fixed-variant": "#3a4a3f",
+                        "on-surface-variant": "#4d463d",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#b6a280",
+                        "secondary": "#526256",
+                        "on-tertiary-fixed-variant": "#534529",
+                        "surface-bright": "#fbf9f4",
+                        "on-tertiary-fixed": "#251a04",
+                        "on-secondary-fixed": "#101f16",
+                        "on-primary-fixed": "#261905",
+                        "secondary-container": "#d2e4d5",
+                        "background": "#fbf9f4",
+                        "error": "#ba1a1a",
+                        "primary-container": "#b8a183",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#d9c4a0",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f0eee9",
+                        "inverse-surface": "#30312e",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#7f766b"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Archivo Narrow"],
+                        "headline-md": ["Libre Caslon Text"],
+                        "body-md": ["Archivo Narrow"],
+                        "body-lg": ["Archivo Narrow"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "title-lg": ["Archivo Narrow"],
+                        "headline-sm": ["Libre Caslon Text"],
+                        "display-lg-mobile": ["Libre Caslon Text"],
+                        "label-md": ["Archivo Narrow"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script><meta charset="utf-8"></head><body class="bg-surface text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/15">
+<div class="flex justify-between items-center px-margin-desktop py-6 max-w-container-max mx-auto">
+<div class="font-display-lg text-display-lg text-on-surface uppercase tracking-tighter" style="color: rgb(184, 161, 131); font-family: &quot;Archivo Narrow&quot;, sans-serif; font-weight: 700; text-shadow: none;">UNIDO</div>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#" class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1">Inicio</a>
+<a href="#carta" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Carta</a>
+<a href="#nosotros" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Nosotros</a>
+<a href="#fotos" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Fotos</a>
+<a href="#contacto" class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">Contacto</a>
+</div>
+<button class="bg-primary text-on-primary font-label-md text-label-md uppercase tracking-widest px-8 py-3 hover:bg-on-surface transition-all active:scale-95">
+                Reserve Now
+            </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center brightness-[0.85]" data-alt="A cinematic, wide-angle photograph of the UNIDO restaurant exterior situated on the tranquil Nordelta lagoon at golden hour. The modern-rustic architecture features natural light wood, black iron beams, and expansive glass walls reflecting the calm water. The lighting is soft and warm, highlighting the high-end beach house aesthetic and the serene, upscale atmosphere of the Peruvian-Japanese fusion establishment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBn8R0otlPmo3OEI5qrjFTUVQY2xLs_71LSrv2xEoroym1nunIBNHlk-kl_F0LPr6VMBU46MiXNTQkdO96Un7IH4tDJMYCbWl0cmYhfdh_B5YLwKSUKBYJ3utxoD0lMGktXUpOWmsxyii-22ZxJcQHUyxLzMMM8oa-THZxS1QmP2WoNl2U8ns_wf9wwJBxfy2Uprnp6yT7l4WQf_EuKaKNLpatasxTaq_rDy6vUXnCCN8LHC64747-lRTsjo5PS8_0wj-YVMP_b1w')"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface/40"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+<h1 class="font-display-lg text-display-lg text-white mb-6 drop-shadow-sm">Sabores, colores y texturas frente a la laguna de Nordelta</h1>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6 mt-12">
+<a class="w-full md:w-auto bg-surface text-on-surface font-label-md text-label-md uppercase tracking-widest px-10 py-4 hover:bg-primary-fixed transition-colors" href="#carta">
+                        Ver la carta
+                    </a>
+<a class="w-full md:w-auto border border-white text-white font-label-md text-label-md uppercase tracking-widest px-10 py-4 hover:bg-white/10 backdrop-blur-sm transition-colors" href="#">
+                        Reservar por WhatsApp
+                    </a>
+</div>
+</div>
+</section>
+<!-- Nosotros Section -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto" id="nosotros">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="space-y-8">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-primary">Nuestra Identidad</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Un encuentro entre el Pacífico y el Delta.</h2>
+<div class="space-y-6 text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+<p class="">UNIDO nace de la pasión por la cocina Nikkei, fusionando la precisión técnica japonesa con la vibrante explosión de sabores de la gastronomía peruana.</p>
+<p class="">Ubicado estratégicamente frente a la laguna central de Nordelta, nuestro espacio invita a una pausa necesaria. Un ambiente familiar y sofisticado donde cada detalle —desde la madera clara hasta el mármol de nuestra barra— ha sido pensado para elevar la experiencia sensorial.</p>
+</div>
+</div>
+<div class="relative aspect-[4/5] overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center image-reveal" data-alt="Interior architectural shot of the UNIDO bar area featuring a minimalist design with premium organic materials. A polished white marble countertop is accented by warm light wood shelving and sophisticated black iron detailing. The atmosphere is calm and luxurious, illuminated by soft natural light filtering through large windows, creating a modern rustic beach house feel." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDM3a2xUkLDs6KiUfxMfKh7mdo0wTB48hEbdNmuMCFVdgVrvtn87Awd_o500IZEctnI79sTC8enBpQ91uMxLYUO5mxwXX4KQUCf_WMHzznuYW7AfxUdRK6DIIf2zpOsZG9I-ThE0NNu8eKUYf7XABhRGptlgJBfUxNESklllBne0qPkVdL4WdCIlEgdEp_Cwo_iknKoNirH7xOnKoeIU4CSAk7ELMPVnBmcD7G8iHHUQIdQqsuv2nA7TZdu_CRsoJdcZs0Pt_f_GQ')"></div>
+<div class="absolute inset-0 border-[20px] border-surface/50 pointer-events-none"></div>
+</div>
+</div>
+</section>
+<!-- Nuestra Cocina (Bento Grid Style) -->
+<section class="bg-surface-container-low py-32" id="carta">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<span class="font-label-md text-label-md uppercase tracking-[0.3em] text-primary">El Arte de la Fusión</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-4">Nuestros destacados de temporada</h2>
+</div>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary border-b border-primary pb-1 hover:text-on-surface hover:border-on-surface transition-colors" href="#">Ver carta completa</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Dish 1 -->
+<div class="bg-surface p-8 border border-outline-variant/10 flex flex-col group transition-all duration-500 hover:bg-white">
+<div class="relative aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover image-reveal" data-alt="A top-down professional food photography shot of a gourmet Sushi Roll at UNIDO. The presentation is elegant on a dark stoneware plate, featuring fresh salmon, avocado, and delicate micro-greens. The lighting is high-key and natural, emphasizing the textures of the rice and the vibrant colors of the seafood against a light marble background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxpNQ9Ys5SzSZLdl-RPT_pF-wvFxY4EGLI3S-YUnvLQA9Te4CI6JVHzS5wB-FyY3anJ_NMN0LAGP3WIs_5tXOEsvyrrO0uVi8PJrpvvC0ggflMn7MTT80edxP-mP0UL_O19nlpcrTzEjKPRrXwSBaft1qr9o5PFMdojhl6UmMlx5IdKaf7dDR9E6X30WEd76PLG9DYz7KKSRkyriq3WGKMcqjoYgpxfoARc_e7O30AsHu9dMPZ3lFekKqvrbBMNegB0J_A6tixOw">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg">Sushi Roll Especial</h3>
+<span class="text-primary font-body-md">$18.500</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">Salmon rosado, palta asada, topping de sésamo y salsa de la casa.</p>
+<div class="flex gap-3">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm uppercase">GF</span>
+</div>
+</div>
+<!-- Dish 2 -->
+<div class="bg-surface p-8 border border-outline-variant/10 flex flex-col group transition-all duration-500 hover:bg-white">
+<div class="relative aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover image-reveal" data-alt="Close-up of a vibrant Ceviche Mixto bowl at UNIDO. The dish contains fresh white fish, octopus, and shrimp marinated in bright leche de tigre with red onion and cilantro. The photography is clean and bright, styled on a rustic wooden table with the lagoon softly blurred in the background, conveying a high-end beach house dining experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwk8SusnK9ycz84L5A2MfNKXpU9Yit6TKxycingEQmiXfY9JErQyHD5f7SwhV111mV3gnw47xM4hLff_ep5sbOuK-SuWYw6_04_1Sntj33Pkx1dZCm-hp83qWnlJKTHcgxkXl2pXaqh_D1cHQeexqMH1dWtYRuoyp7omOkLPtAxznVJ9KrfFWPX6JESbnGqfoj9FPOjKGxAYRM9QFLXlBBZLK4sYDIMYIoKq50gkBeHlye6BAFgOd7wvHFSKLu8jhOt49EfudTDA">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg">Ceviche Mixto</h3>
+<span class="text-primary font-body-md">$21.200</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">Pesca del día, pulpo y langostinos en leche de tigre de ají amarillo.</p>
+<div class="flex gap-3">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm uppercase">GF</span>
+</div>
+</div>
+<!-- Dish 3 -->
+<div class="bg-surface p-8 border border-outline-variant/10 flex flex-col group transition-all duration-500 hover:bg-white">
+<div class="relative aspect-square mb-8 overflow-hidden">
+<img class="w-full h-full object-cover image-reveal" data-alt="Elegant presentation of Arroz Cremoso with seasonal vegetables at UNIDO. The dish has a rich, creamy texture and is garnished with edible flowers and sprouts. The lighting is soft and golden, highlighting the earthy tones of the Peruvian-Japanese fusion cuisine, served on a bespoke ceramic dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUZuMc__zISK6TooaviJjhvndsyR-qg4HqaNLvPufJFXxqI-Qu5SR1nEoke36z19c7W7-sdZK09MS1ZqsaSsjejAbPYzP2rTVvJfZNw5fbNnh1SYTF1NYymcK07qnC39kFHsih59z3w_BKiOGyvWfkw-msD_YhXebBqlebDiuGAEHecADx5629glGsYxcZqVClxGfgXTGD5VTKqHD0uHLZZq0xdz4_6xPyoahE2zElR9t2DuLcOLUa8QHlMAhoGAZJbvsApzg4Tg">
+</div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-title-lg text-title-lg">Arroz Cremoso</h3>
+<span class="text-primary font-body-md">$19.800</span>
+</div>
+<p class="text-on-surface-variant font-body-md mb-6 flex-grow">Arroz arborio, setas de estación y emulsión de trufa blanca.</p>
+<div class="flex gap-3">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full text-label-sm font-label-sm uppercase">Vegan</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Galería Section -->
+<section class="py-32 px-margin-desktop" id="fotos">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-12 grid-rows-2 gap-4 h-[800px]">
+<div class="col-span-8 row-span-2 relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center image-reveal" data-alt="Wide panoramic view of the UNIDO deck overlooking the Nordelta lagoon. Minimalist outdoor furniture with neutral fabric cushions is arranged on a light wood deck. The scene is illuminated by the soft light of sunset, creating a peaceful and upscale beach house ambiance with the water glistening in the background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMcVFjMmItH38XNWT3yGLPfEwNdsJ_gfAhjybBHmOP0blfLUGcXQOvT3IqyK1SNyXkAfOw-hWP3OfS9ThS30IiMq46yMpYF1k_blzabjFmKNHCH6jVxi2c7E3O6ltBFkC5BO6vptgaJqQhGHunUgmHOckgMOe1XYXekeyBw7Py9v_A5BvnGcxJAAtrpvy1x9nk3_KS3skeReRNgNBQf6xJuiP4TXRzd9vYZakcEksMcsg3YFQ4KlTeYNly5FV87nlaspIqAx0wPQ')"></div>
+</div>
+<div class="col-span-4 row-span-1 relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center image-reveal" data-alt="Close-up detail of a minimalist table setting at UNIDO. A white ceramic plate sits on a light wood tabletop with a single sprig of greenery in a small bud vase. The aesthetic is modern-rustic and very clean, emphasizing the high-end dining identity of the restaurant." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDPCHWdL04hx_6ASYJVNSjXTlniXr8h9k6NDdSltOoZAbEMYSvt0sfYcH8jWf_Zkspp80xci8hzLeVWum9zCne2oPk3GDaZNgD9wOfoLHAG_absZA3IeiORyB-pPnTdzwmAimh-dQwr57aEsDyF6yyEzGxu8G5HjiQZ5jQWAA1JkpdgR05iygj_fQ0k8aC-heSnh4GIGV_o_Ds1MJYM6-ehvnCgs4OhoK6iBxrhhIvfuIBdEU1Zvt0GbK6QSy51YYQl_XZNXFWWQA')"></div>
+</div>
+<div class="col-span-4 row-span-1 relative overflow-hidden group">
+<div class="w-full h-full bg-cover bg-center image-reveal" data-alt="A professional chef in a clean white uniform meticulously preparing nigiri sushi at the UNIDO sushi bar. The background is a mix of warm wood and dark iron accents. The lighting is focused and warm, showcasing the artisan craft and the precision of Nikkei cuisine." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDwdDuMt9Ncp-WoeSZm3GGG0DNRUH-RW-vicbjrxbAyuSXOIH6-uoaD33jHLwl_VuMcniUzUDjLX3ks8YFA6Qz4SwrAZXB1ki90KAkXo7aIHJNUBjGDDaZXCxW7H17PEpb9gA8NmJ4hD4wK_Yn1VTL15XeYiTyJa5NdQKaKf67kn2HOdKcxaU2QobmW4cWTzgcepfw2pk8gDwMTyKcbdy48JqWQo1FiW92aLyqyJKspwxMEDkY83i2nxMub6FFXTLAvss6TB5G4cw')"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonios -->
+<section class="bg-primary-fixed py-32 overflow-hidden">
+<div class="px-margin-desktop max-w-container-max mx-auto text-center">
+<div class="mb-16">
+<span class="font-headline-md text-headline-md text-primary">4,1 ★ en Google</span>
+<p class="font-label-md text-label-md uppercase tracking-widest mt-2">Basado en más de 1.200 opiniones</p>
+</div>
+<div class="flex gap-8 overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-10">
+<div class="min-w-[320px] md:min-w-[400px] bg-white p-12 snap-center border border-outline-variant/10 text-left">
+<div class="flex mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-8">"La mejor vista de Nordelta y el sushi es de otro planeta. La atención es impecable, se nota el amor en cada plato."</p>
+<p class="font-label-md text-label-md uppercase font-bold text-on-surface">Mariana Soler</p>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] bg-white p-12 snap-center border border-outline-variant/10 text-left">
+<div class="flex mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-8">"Un lugar ideal para una cena romántica. El ceviche mixto es un 10. Volveremos sin dudas."</p>
+<p class="font-label-md text-label-md uppercase font-bold text-on-surface">Javier Gomez</p>
+</div>
+<div class="min-w-[320px] md:min-w-[400px] bg-white p-12 snap-center border border-outline-variant/10 text-left">
+<div class="flex mb-4 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-lg text-body-lg italic mb-8">"Ambiente relajado pero elegante. La barra de sushi es espectacular. Muy recomendado el kimuchi."</p>
+<p class="font-label-md text-label-md uppercase font-bold text-on-surface">Lucía Torres</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Ubicación Section -->
+<section class="py-32" id="contacto">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-outline-variant/20">
+<div class="p-16 md:p-24 bg-surface flex flex-col justify-center">
+<h2 class="font-headline-md text-headline-md mb-12">Visitános</h2>
+<div class="space-y-10">
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Dirección</h4>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Avenida del Puerto 240, Bahía de Nordelta,<br>Tigre, Buenos Aires.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Horarios</h4>
+<ul class="font-body-lg text-body-lg text-on-surface-variant space-y-1">
+<li class="">Lunes a Viernes: 08:00 — 00:00</li>
+<li class="">Sábados y Domingos: 09:00 — 00:00</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md uppercase tracking-widest text-primary mb-2">Contacto</h4>
+<p class="font-body-lg text-body-lg text-on-surface-variant">+54 11 1234 5678<br>hola@unido.com.ar</p>
+</div>
+</div>
+</div>
+<div class="h-[600px] w-full">
+<div class="w-full h-full grayscale hover:grayscale-0 transition-all duration-700" data-location="Bahía Grande, Nordelta, Tigre, Buenos Aires">
+<!-- Image used as fallback for map visualization -->
+<div class="w-full h-full bg-cover bg-center" data-alt="A clean, minimalist architectural map visualization showing the area around Nordelta's Bahía Grande. The map uses a palette of soft crema and charcoal, highlighting the waterfront location of UNIDO among the luxury buildings and parks. The style is editorial and fits the modern beach house aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNCRacEpFGu9-Iq3RpvLQlwWU-lH1tLD26GEq0z2IJ7W1wlC2O-5LpRR5zBZ57QupXo5wqgEsY-A1p-pWGj02u62vB2FMa2hrJ3rUIzfw79IeCB3ns1Yh_80dO_yA1hsTdzthp7oOZXQ7N6JShUFrI9gigvb5OHPi1F2Br2Quu9sOYV1aTt403s_hnVhnXF4R7vn7CI-7lGv_isNjF4Y51tdDTuIfsYZX90B6X004UAtIT58wbPPfCmi0O2MdC1-2r1e0Nvvmfug')"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Unido en Casa Section -->
+<section class="py-24 bg-tertiary-fixed-dim relative overflow-hidden">
+<div class="texture-overlay absolute inset-0"></div>
+<div class="px-margin-desktop max-w-container-max mx-auto text-center relative z-10">
+<span class="font-label-md text-label-md uppercase tracking-[0.4em] text-on-tertiary-fixed mb-4 block">UNIDO EN CASA</span>
+<h2 class="font-display-lg text-display-lg text-on-tertiary-fixed mb-10">Disfrutá nuestra cocina donde estés</h2>
+<button class="bg-on-tertiary-fixed text-surface font-label-md text-label-md uppercase tracking-widest px-12 py-5 hover:bg-on-surface-variant transition-all">
+                    Hacer pedido por WhatsApp
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest py-16 border-t border-outline-variant/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1">
+<div class="font-headline-sm text-headline-sm text-primary uppercase mb-6" style="color: rgb(184, 161, 131); font-family: &quot;Archivo Narrow&quot;, sans-serif; font-weight: 700; text-shadow: none;">UNIDO</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Nikkei Experience at Nordelta. Un espacio donde la tradición japonesa y el alma peruana se encuentran frente al agua.</p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md uppercase tracking-widest mb-6 font-bold">Explorar</h4>
+<nav class="flex flex-col space-y-3">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Inicio</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#carta">Carta</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#fotos">Fotos</a>
+</nav>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md uppercase tracking-widest mb-6 font-bold">Social</h4>
+<nav class="flex flex-col space-y-3">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">TripAdvisor</a>
+</nav>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-md text-label-md uppercase tracking-widest mb-6 font-bold">Newsletter</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Recibí novedades y eventos exclusivos.</p>
+<div class="flex border-b border-outline">
+<input class="bg-transparent border-none focus:ring-0 w-full py-2 px-0 text-on-surface placeholder:text-outline font-body-md" placeholder="Email" type="email">
+<button class="material-symbols-outlined text-primary">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline-variant/10">
+<p class="font-body-md text-body-md text-on-surface-variant opacity-60">© 2024 UNIDO NIKKEI. ALL RIGHTS RESERVED. <span class="mx-4">|</span> <a class="hover:text-primary" href="#">Privacy Policy</a></p>
+</div>
+</footer>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple header background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-6');
+            } else {
+                nav.classList.add('py-6');
+                nav.classList.remove('py-4');
+            }
+        });
+    </script>
+
+</body></html>
